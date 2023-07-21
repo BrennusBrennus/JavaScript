@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <style>
+
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body {
+            background-color: tomato;
+        }
+
+        h1 {
+            color: white;
+            font-size: 5rem;
+            font-weight: bold;
+            text-shadow: 3px 3px 0px grey;
+            text-decoration: line-through;
+        }
+    </style>
+</head>
+<body>
+    <h1>Ola señorita</h1>
+    <script>
+        // Number.parseFloat() converte string em number. Decimais
+        // Number.parseInt() converte para number sem os decimais
+        // Numbebr() faz a função dos dois
+        //
+        // n.toString() converte numeros em textos
+        // String() faz a mesma coisa
+
+        var n1 = Number(window.prompt('digite um numero: '))
+        var n2 = Number(window.prompt('digite outro numero: '))
+        var soma = n1 + n2
+        window.alert('a soma dos valores é ' + String(soma))
+
+        // var nome = window.prompt('qual o seu nome')
+        // window.alert(`${nome}, vocé é especial`)
+
+    </script>
+</body>
+</html>
