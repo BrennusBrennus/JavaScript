@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mais eventos</title>
+
+    <style>
+    
+        * {
+            font-family: sans-serif;   
+        }
+
+        body {
+            background-color: lightblue;
+        }
+
+        h1 {
+            color: white;
+            text-align: center;
+            padding-top: 10px;
+            text-shadow: 3px 3px 5px rgb(64, 61, 61);
+
+        }
+
+        #cor {
+            background-color: green;
+            height: 300px;
+            width: 470px;
+            position: relative;
+            box-shadow: 1px 1px grey;
+        }
+
+        .drad {
+            position: absolute;
+            top: 150px;
+            left: 80px;
+            background-color: white;
+            height: 70px;
+            width: 300px;
+            border-radius: 10px;
+            text-indent: 10px;
+            padding-top: 10px;
+        }
+
+
+        input.b {
+            margin-left: 203px;
+            margin-top: 15px;
+        }
+
+        input.n {
+            margin-left: 35px;
+            border-radius: 3px;
+            height: 20px;
+            
+        }
+
+
+
+
+
+
+
+
+
+
+    </style>
+
+</head>
+<body>
+    <div id="cor">
+        <h1>Somando valores</h1>
+        <input type="number" name="txtn1" id="txtn1" class="n">
+        <input type="number" name="txtn2" id="txtn2" class="n">
+        <input type="button" value="somar" onclick="soma()" class="b">
+        <div id="res" class="drad">Resultado</div>
+    </div>
+
+
+    <script>
+        function soma() {
+            var tn1 = window.document.getElementById('txtn1')
+            var tn2 = window.document.querySelector('input#txtn2')
+            var res = window.document.getElementById('res')
+            var n1 = Number(tn1.value)
+            var n2 = Number(tn2.value)
+            var s = n1 + n2
+            res.innerHTML = `A soma entre ${n1} e ${n2} é <strong>${s}</strong>` 
+        }
+    </script>
+</body>
+</html>
