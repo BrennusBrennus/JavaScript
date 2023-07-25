@@ -1,0 +1,29 @@
+@charset "utf-8";
+
+body {
+    background: black url(imagens/waving.jpg) center center no-repeat fixed;
+            background-size: cover;
+}
+
+
+#pai {
+    position: relative;
+    margin: auto;
+
+    background-color: gray;
+    height: 600px;
+    width: 400px;
+    border-radius: 3%;
+    box-shadow: 1px 1px rgba(0, 0, 0, 0.397);
+}
+
+#filho {
+    position: absolute;
+    top: 350px;
+    left: 50px;
+
+    background-color: white;
+    width: 300px;
+    height: 200px;
+}
+
