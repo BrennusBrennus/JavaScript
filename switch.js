@@ -11,7 +11,7 @@ var diasem = agora.getDay()
     6 = Sábado
 */
 
-diasem = 3
+diasem = 6
 
 switch(diasem) {
     case 0:
@@ -31,6 +31,7 @@ switch(diasem) {
         break
     case 5: 
         console.log('Sexta-feira')
+        break
     case 6:
         console.log('Sábado')
     break
