@@ -15,7 +15,8 @@ function enviar() {
 
         if (fsex[0].checked) {
             genero = 'Homem'
-            if (idade >= 0 || idade < 3) {
+            document.body.style.background = 'lightblue'
+            if (idade >= 0 && idade < 3) {
                 // bebê
                 img.setAttribute('src', 'bebe.png')
 
@@ -42,7 +43,8 @@ function enviar() {
 
         } else if (fsex[1].checked) {
             genero = 'Mulher'
-            if (idade >= 0 && idade < 2) {
+            document.body.style.background = 'pink'
+            if (idade >= 0 && idade < 3) {
                 // bebê
                 img.setAttribute('src', 'bebe.png')
 
@@ -64,13 +66,13 @@ function enviar() {
                 
             } else {
                 // idoso 
-                img.setAttribute('src', 'velha')
+                img.setAttribute('src', 'velha.png')
             }
+            
         }
-
-        res.innerHTML = `Você é ${genero} e tem ${idade} anos de idade`
-        res.appendChild(img)
+        
+        
     }
-
-
+    res.innerHTML = `Você é <strong>${genero}</strong> e tem ${idade} anos de idade`
+    res.appendChild(img)
 }
