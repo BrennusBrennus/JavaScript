@@ -1,8 +1,7 @@
 var c = 1
-
 do {
     if (c % 2 == 1) {
-        console.log(`passo ${c}`)
+        console.log('passo ${c}')
         c++
     }
 } while (c <= 13)
